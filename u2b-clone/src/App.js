@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from './Header';
+import Sidebar from './Sidebar';
+import RecommendedVideos from './RecommendedVideos';
 import './App.css';
 
 function App() {
@@ -8,8 +10,12 @@ function App() {
     <div className="app">
         {/*Header*/}
         <Header />
-        {/*Sidebar*/}
-        {/*Recommended*/}
+        <div className="app_page">
+          {/*Sidebar*/}
+          <Sidebar />
+          {/*Recommended*/}
+          <RecommendedVideos />
+        </div>
     </div>
   );
 }
