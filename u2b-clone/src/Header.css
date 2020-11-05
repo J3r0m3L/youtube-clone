@@ -1,0 +1,46 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: white;
+}
+
+.header_logo {
+  height: 25px;
+  margin-left: 20px;
+}
+/*PNG images will get distorted if you get the height and width off so with that object-fit:contain*/
+
+.header_input {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  border: 1px solid lightgray;
+}
+
+.header_input > input {
+  flex: 1;
+  border: none;
+}
+/*flex: 1 makes it so it takes up all available space within the header_input */
+
+.header_inputButton {
+  width: 50px !important;
+  background-color: #fafafa;
+  border-left: 1px solid lightgray;
+  color: gray;
+}
+
+.header_icons {
+  display: flex;
+  align-items: center;
+
+}
+
+.header_icon {
+  margin-right: 8px;
+}
